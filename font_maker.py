@@ -228,7 +228,7 @@ for key, val in text_dict.items():
         arr[1] = 8
 
         for j in range(len(val)):
-            arr[j + 2] = text_dict[key][j] & 0b01111111
+            arr[j + 2] = val[j] & 0b01111111
 
         out[str(key)] = arr
         # print('    '+ "'"+str(i)+"'", ':', arr, ',')
